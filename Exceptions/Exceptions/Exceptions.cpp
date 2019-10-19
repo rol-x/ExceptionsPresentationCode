@@ -9,7 +9,8 @@ int main()
 	Divider divider;
 	//divider.DivideUnprotected();
 	//divider.DivideProtected();
-	divider.DivideSpecialized();
+	//divider.DivideSpecialized();
+	divider.PerformTask();
 
 	system("pause");
 }

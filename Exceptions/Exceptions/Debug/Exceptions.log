@@ -1,2 +1,6 @@
 ﻿  Divider.cpp
+c:\users\charles0\documents\computerprogramming\exceptions\exceptions\exceptions\divider.cpp(103): warning C4101: 'exc': unreferenced local variable
+  Exceptions.cpp
+  OutOfRange.cpp
+  Generating Code...
   Exceptions.vcxproj -> C:\Users\charles0\Documents\ComputerProgramming\Exceptions\Exceptions\Debug\Exceptions.exe

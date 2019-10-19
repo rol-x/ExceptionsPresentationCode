@@ -151,12 +151,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BadInputException.h" />
     <ClInclude Include="Divider.h" />
+    <ClInclude Include="OutOfRange.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BadInputException.cpp" />
     <ClCompile Include="Divider.cpp" />
     <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="OutOfRange.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
