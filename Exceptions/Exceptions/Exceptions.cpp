@@ -7,9 +7,9 @@ using namespace std;
 int main()
 {
 	Divider divider;
-	divider.DivideUnprotected();
+	//divider.DivideUnprotected();
 	//divider.DivideProtected();
-	//divider.DivideSpecialized();
+	divider.DivideSpecialized();
 
 	system("pause");
 }

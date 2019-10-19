@@ -18,7 +18,6 @@ void Divider::DivideUnprotected()
 	cout << result;
 }
 
-
 void Divider::DivideProtected()
 {
 	int a, b;
@@ -47,21 +46,27 @@ void Divider::DivideSpecialized()
 	cout << "Pass first number: ";
 	cin >> a;
 	cout << "Pass second number (type what you want, whatever): ";
-	cin >> b;
 	try
 	{
+		cin >> b;
+		if (!cin.good())
+			throw invalid_argument("You have to provide a proper number!\n");
 		if (b == 0)
-			throw domain_error("You attempted to divide by 0, you fool!");
+			throw domain_error("You attempted to divide by 0, you fool!\n");
 		double result = a / b;
-		cout << result;
+		cout << result << endl;
 	}
-	catch (domain_error exc)
+	catch (domain_error dom)
 	{
-		cout << exc.what();
+		cout << dom.what() << endl;
 	}
-	catch (overflow_error ovr)
+	catch (invalid_argument inv)
 	{
-		cout << ovr.what() << endl;
+		cout << inv.what() << endl;
+	}
+	catch (exception exc)
+	{
+		cout << exc.what() << endl;
 	}
 }
 
